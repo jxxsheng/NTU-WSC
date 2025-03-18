@@ -1,0 +1,64 @@
+/* Portfolio Page Styles */
+.portfolio-container {
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  .portfolio-header {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .portfolio-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .portfolio-image {
+    width: 400px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .portfolio-text {
+    text-align: left;
+  }
+  
+  .portfolio-text h2 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .portfolio-text p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Responsive Design: Stack images on smaller screens */
+  @media (max-width: 768px) {
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+    .portfolio-item {
+      flex-direction: column;
+      text-align: center;
+    }
+    .portfolio-text {
+      text-align: center;
+    }
+  }
