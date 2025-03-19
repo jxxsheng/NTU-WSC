@@ -2,10 +2,10 @@ import React from "react";
 import "../styles/Home.css";
 
 // Import images correctly
-import image1 from "../assets/AAA.JPG";
-import image2 from "../assets/BBB.JPG";
 import image3 from "../assets/CCC.JPG";
-import image4 from "../assets/DDD.JPG";
+import image1 from "../assets/RSP/RSP_DC.jpg";
+import image4 from "../assets/SC/SC_IR.jpg";
+import image2 from "../assets/SP/SP_IGC.jpg";
 
 const Home = () => {
   return (
