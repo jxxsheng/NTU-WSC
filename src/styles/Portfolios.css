@@ -35,7 +35,7 @@
 .portfolio-image {
   width: 100%;
   max-width: 400px;
-  height: auto;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 }
@@ -57,7 +57,7 @@
 }
 
 /* Responsive Design: Stack images on smaller screens */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .portfolio-grid {
       grid-template-columns: 1fr;
   }
