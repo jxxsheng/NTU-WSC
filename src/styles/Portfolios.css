@@ -1,13 +1,12 @@
-/* Portfolio Page Styles */
 .portfolio-container {
     text-align: center;
-    padding: 50px 20px;
+    margin: 0 20px 0 20px;
   }
   
   .portfolio-header {
     font-size: 40px;
-    font-weight: 700;
-    margin-bottom: 40px;
+    font-weight: 1000;
+    margin: 80px 10px 30px 10px;
   }
   
   .portfolio-grid {
