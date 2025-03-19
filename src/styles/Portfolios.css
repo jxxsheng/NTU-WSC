@@ -1,63 +1,76 @@
+/* Portfolio Page Styles */
 .portfolio-container {
-    text-align: center;
-    margin: 0 20px 0 20px;
-  }
-  
-  .portfolio-header {
-    font-size: 40px;
-    font-weight: 1000;
-    margin: 80px 10px 30px 10px;
-  }
-  
+  text-align: center;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 20px;
+  overflow-x: hidden;
+}
+
+.portfolio-header {
+  font-size: 40px;
+  font-weight: 1000;
+  margin: 80px 10px 30px 10px;
+}
+
+.portfolio-grid {
+  display: grid;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portfolio-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.portfolio-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.portfolio-text {
+  text-align: left;
+  flex: 1;
+}
+
+.portfolio-text h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.portfolio-text p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive Design: Stack images on smaller screens */
+@media (max-width: 768px) {
   .portfolio-grid {
-    display: grid;
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-  
-  .portfolio-item {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    background: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .portfolio-image {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-  }
-  
-  .portfolio-text {
-    text-align: left;
-  }
-  
-  .portfolio-text h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  
-  .portfolio-text p {
-    font-size: 16px;
-    color: #555;
-  }
-  
-  /* Responsive Design: Stack images on smaller screens */
-  @media (max-width: 768px) {
-    .portfolio-grid {
       grid-template-columns: 1fr;
-    }
-    .portfolio-item {
+  }
+  .portfolio-item {
       flex-direction: column;
       text-align: center;
-    }
-    .portfolio-text {
-      text-align: center;
-    }
+      width: 100%;
   }
+  .portfolio-text {
+      text-align: center;
+  }
+  .portfolio-image {
+      width: 100%;
+      max-width: 100%;
+  }
+}
